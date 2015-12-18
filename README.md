@@ -43,13 +43,13 @@ For example, the *entire* sample app code inside of ViewController.swift is less
 
 Integration of the [IBM Watson Language Translation][language_translation] service is shown below:
 
-<code>let translation = LanguageTranslation(username:"your username", password: "your password")
+<pre><code>let translation = LanguageTranslation(username:"your username", password: "your password")
 
 translation.translate([inputText!], source: "en", target: model.target!) { text, error in
     let translation = text![0]
     print(translation)
 }
-</code>
+</code></pre>
 
 Feel free to explore this project, and be sure to explore the [IBM Watson iOS SDK (beta)][ios_sdk].
 
